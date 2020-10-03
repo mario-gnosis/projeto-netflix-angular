@@ -1,6 +1,6 @@
-<nav class="navbar navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-dark bg-dark fixed-top" [ngClass]="{'sidebar-open' : opened}">
 
-  <button class="navbar-toggler d-lg-none" type="button">
+  <button class="navbar-toggler d-lg-none" type="button" (click)="toggle()">
     <img src="assets/images/hamburger.gif" alt="Menu">
   </button>
 
@@ -37,7 +37,7 @@
   </form>
 
   <div class="media text-white p-2 d-none d-lg-flex">
-    <img src="assets/images/avatar.jpg" alt="Avatar" class="mr-2">
+    <img src="assets/images/avatar.png" alt="Avatar" class="mr-2">
     <div class="media-body">
       <p class="h6 m-0 text-uppercase">Mário Lima</p>
     </div>
@@ -45,7 +45,7 @@
 
   <ul class="list-unstyled font-weight-bold sidebar">
     <li class="media media-avatar">
-      <img src="assets/images/avatar.jpg" alt="Avatar" class="mr-2">
+      <img src="assets/images/avatar.png" alt="Avatar" class="mr-2">
       <div class="media-body">
         <p class="h6 m-0">Mário Lima</p>
         <small>Trocar de perfil</small>
